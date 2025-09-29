@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的作品集</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <h1>你好，我是<span class="accent">Rickeylaiii</span></h1>
+            <p>专注于 MCU 嵌入式、机器人控制与 RTOS 的工程师，热爱把算法与硬件融合成可靠的系统。</p>
+            <a class="hero__cta" href="#video">立即观看</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="about">
+            <div class="about__text">
+                <h2>关于我</h2>
+                <p>
+                    毕业于深圳大学控制科学与工程硕士。
+                    多次主导无人机、机器人与边缘计算类项目，熟悉嵌入式调试、低功耗设计、运动控制与传感器融合。
+                </p>
+                <p>
+                    我擅长把 ROS/ROS2、FreeRTOS 与 Linux 生态下的算法快速验证并落地到实际硬件平台，确保系统在复杂环境中稳定运行。
+                    下方视频展示了我在嵌入式控制、移动机器人定位与感知方面的核心成果。
+                </p>
+            </div>
+            <div class="about__cards">
+                <article class="info-card">
+                    <h3>技能栈</h3>
+                    <ul>
+                        <li>C/C++、Python、Shell</li>
+                        <li>MCU：STM32 · ESP32 · 瑞芯微 RK3568/K210/TC264</li>
+                        <li>系统：FreeRTOS · Linux · ROS/ROS2</li>
+                        <li>通信：I2C · SPI · UART · Wi-Fi</li>
+                        <li>嵌入式驱动 · 传感器融合 · 运动控制</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="video" class="video">
+            <h2>作品集视频</h2>
+            <p>根据你的关注点选择对应的项目演示，点击卡片即可播放。</p>
+            <div class="video__list">
+                <div class="video__group" id="video-classical">
+                    <div class="video__group-header">
+                        <h3 class="video__group-title">经典控制 · 浮空器与稳定系统</h3>
+                        <p class="video__group-subtitle">涵盖室内浮空器、平流层浮空器、平衡车辆与载荷指向稳定等项目，展示我在建模、控制算法、执行机构协同方面的实践成果。</p>
+                    </div>
+                    <div class="video__grid">
+                        <article class="video-card" data-src="assets/ClassicalControl/AIRSHIP_INDOOR.mp4" data-poster="assets/video-poster.jpg">
+                            <div class="video-card__thumb" style="background-image: url('assets/video-poster.jpg');">
+                                <div class="video-card__player" hidden></div>
+                                <span class="video-card__badge">室内浮空器</span>
+                                <button class="video-card__play" type="button" aria-label="播放室内浮空器自主悬停演示">
+                                    <span aria-hidden="true">▶</span>
+                                </button>
+                            </div>
+                            <div class="video-card__body">
+                                <h3>室内浮空器自主悬停</h3>
+                                <p>展示气球式浮空器在小空间内通过多传感器融合与 PID 调参实现稳定悬停与姿态保持。</p>
+                                <div class="video-card__meta">
+                                    <span class="video-card__duration">01:42</span>
+                                    <button class="video-card__cta" type="button">播放视频</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="video-card" data-src="assets/ClassicalControl/AIRSHIP_SPACE.mp4" data-poster="assets/video-poster.jpg">
+                            <div class="video-card__thumb" style="background-image: url('assets/video-poster.jpg');">
+                                <div class="video-card__player" hidden></div>
+                                <span class="video-card__badge">平流层浮空器</span>
+                                <button class="video-card__play" type="button" aria-label="播放平流层浮空器高度控制演示">
+                                    <span aria-hidden="true">▶</span>
+                                </button>
+                            </div>
+                            <div class="video-card__body">
+                                <h3>平流层浮空器高度控制</h3>
+                                <p>重点展示对外部扰动进行补偿的高度调节策略，以及在仿真与实物间的参数整定经验。</p>
+                                <div class="video-card__meta">
+                                    <span class="video-card__duration">02:05</span>
+                                    <button class="video-card__cta" type="button">播放视频</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="video-card" data-src="assets/ClassicalControl/balance_motor.mp4" data-poster="assets/video-poster.jpg">
+                            <div class="video-card__thumb" style="background-image: url('assets/video-poster.jpg');">
+                                <div class="video-card__player" hidden></div>
+                                <span class="video-card__badge">平衡单车</span>
+                                <button class="video-card__play" type="button" aria-label="播放平衡单车姿态控制演示">
+                                    <span aria-hidden="true">▶</span>
+                                </button>
+                            </div>
+                            <div class="video-card__body">
+                                <h3>平衡单车姿态控制</h3>
+                                <p>通过 IMU 感知与闭环控制实现单轮自平衡，突出前馈/反馈组合与限幅策略。</p>
+                                <div class="video-card__meta">
+                                    <span class="video-card__duration">01:28</span>
+                                    <button class="video-card__cta" type="button">播放视频</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="video-card" data-src="assets/ClassicalControl/Gondola_Directional_Stability.mp4" data-poster="assets/video-poster.jpg">
+                            <div class="video-card__thumb" style="background-image: url('assets/video-poster.jpg');">
+                                <div class="video-card__player" hidden></div>
+                                <span class="video-card__badge">载荷稳定</span>
+                                <button class="video-card__play" type="button" aria-label="播放载荷指向稳定演示">
+                                    <span aria-hidden="true">▶</span>
+                                </button>
+                            </div>
+                            <div class="video-card__body">
+                                <h3>载荷指向稳定平台</h3>
+                                <p>介绍吊舱负载的双自由度稳定机制，适应风扰与运动基底的指向补偿算法。</p>
+                                <div class="video-card__meta">
+                                    <span class="video-card__duration">02:12</span>
+                                    <button class="video-card__cta" type="button">播放视频</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="video__group" id="video-edge">
+                    <div class="video__group-header">
+                        <h3 class="video__group-title">边缘智能 · 感知与执行</h3>
+                        <p class="video__group-subtitle">集合人脸活体识别、配送机器人和姿态估计等项目，体现我将深度学习模型压缩与部署到嵌入式/边缘设备的能力。</p>
+                    </div>
+                    <div class="video__grid">
+                        <article class="video-card" data-src="assets/edge/living_face_recognition.mp4" data-poster="assets/video-poster.jpg">
+                            <div class="video-card__thumb" style="background-image: url('assets/video-poster.jpg');">
+                                <div class="video-card__player" hidden></div>
+                                <span class="video-card__badge">活体识别</span>
+                                <button class="video-card__play" type="button" aria-label="播放活体人脸识别系统演示">
+                                    <span aria-hidden="true">▶</span>
+                                </button>
+                            </div>
+                            <div class="video-card__body">
+                                <h3>活体人脸识别门禁</h3>
+                                <p>在 ARM 平台部署双路摄像头与深度模型，完成多角度活体检测与身份认证。</p>
+                                <div class="video-card__meta">
+                                    <span class="video-card__duration">01:36</span>
+                                    <button class="video-card__cta" type="button">播放视频</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="video-card" data-src="assets/edge/car.mp4" data-poster="assets/video-poster.jpg">
+                            <div class="video-card__thumb" style="background-image: url('assets/video-poster.jpg');">
+                                <div class="video-card__player" hidden></div>
+                                <span class="video-card__badge">送药小车</span>
+                                <button class="video-card__play" type="button" aria-label="播放送药小车边缘推理演示">
+                                    <span aria-hidden="true">▶</span>
+                                </button>
+                            </div>
+                            <div class="video-card__body">
+                                <h3>送药小车边缘推理</h3>
+                                <p>结合视觉定位与深度模型，展示医院场景下的导航、避障与任务调度。</p>
+                                <div class="video-card__meta">
+                                    <span class="video-card__duration">02:20</span>
+                                    <button class="video-card__cta" type="button">播放视频</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="video-card" data-src="assets/edge/HRNET_pose_detect.mp4" data-poster="assets/video-poster.jpg">
+                            <div class="video-card__thumb" style="background-image: url('assets/video-poster.jpg');">
+                                <div class="video-card__player" hidden></div>
+                                <span class="video-card__badge">HRNet 姿态</span>
+                                <button class="video-card__play" type="button" aria-label="播放 HRNet 姿态识别演示">
+                                    <span aria-hidden="true">▶</span>
+                                </button>
+                            </div>
+                            <div class="video-card__body">
+                                <h3>HRNet 姿态识别加速</h3>
+                                <p>通过模型蒸馏与算子优化，把 HRNet 人体关键点识别部署在 RK3568 上实时运行。</p>
+                                <div class="video-card__meta">
+                                    <span class="video-card__duration">01:54</span>
+                                    <button class="video-card__cta" type="button">播放视频</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="video__group" id="video-hardware">
+                    <div class="video__group-header">
+                        <h3 class="video__group-title">智能硬件 · 交互与穿戴</h3>
+                        <p class="video__group-subtitle">聚焦定制硬件和多模态交互设备，将算法与传感器紧密结合，打造可量产的原型。</p>
+                    </div>
+                    <div class="video__grid">
+                        <article class="video-card" data-src="assets/IntelligentHardware/openglasslaiii.mp4" data-poster="assets/video-poster.jpg">
+                            <div class="video-card__thumb" style="background-image: url('assets/video-poster.jpg');">
+                                <div class="video-card__player" hidden></div>
+                                <span class="video-card__badge">GLASSMINDS</span>
+                                <button class="video-card__play" type="button" aria-label="播放 GLASSMINDS 智能眼镜演示">
+                                    <span aria-hidden="true">▶</span>
+                                </button>
+                            </div>
+                            <div class="video-card__body">
+                                <h3>GLASSMINDS 智能眼镜</h3>
+                                <p>展示在 AR 眼镜上实现语音控制、实时字幕和远程协作的软硬件一体化方案。</p>
+                                <div class="video-card__meta">
+                                    <span class="video-card__duration">02:08</span>
+                                    <button class="video-card__cta" type="button">播放视频</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="video-card" data-src="assets/IntelligentHardware/chat_robot.mp4" data-poster="assets/video-poster.jpg">
+                            <div class="video-card__thumb" style="background-image: url('assets/video-poster.jpg');">
+                                <div class="video-card__player" hidden></div>
+                                <span class="video-card__badge">AI Chat Robot</span>
+                                <button class="video-card__play" type="button" aria-label="播放 AI 聊天机器人演示">
+                                    <span aria-hidden="true">▶</span>
+                                </button>
+                            </div>
+                            <div class="video-card__body">
+                                <h3>AI 聊天机器人终端</h3>
+                                <p>整合语音唤醒、自然语言理解与机械结构交互，实现具身问答体验。</p>
+                                <div class="video-card__meta">
+                                    <span class="video-card__duration">01:47</span>
+                                    <button class="video-card__cta" type="button">播放视频</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="video__group" id="video-ros">
+                    <div class="video__group-header">
+                        <h3 class="video__group-title">ROS 项目 · 机器人软件栈</h3>
+                        <p class="video__group-subtitle">展示 micro-ROS 与 ROS2 MoveIt! 的应用，从底层驱动到仿真调度，体现快速构建机器人软件栈的能力。</p>
+                    </div>
+                    <div class="video__grid">
+                        <article class="video-card" data-src="assets/ros/ESP32S3_mircoROS_car.mp4" data-poster="assets/video-poster.jpg">
+                            <div class="video-card__thumb" style="background-image: url('assets/video-poster.jpg');">
+                                <div class="video-card__player" hidden></div>
+                                <span class="video-card__badge">micro-ROS 小车</span>
+                                <button class="video-card__play" type="button" aria-label="播放 micro-ROS 小车演示">
+                                    <span aria-hidden="true">▶</span>
+                                </button>
+                            </div>
+                            <div class="video-card__body">
+                                <h3>ESP32-S3 micro-ROS 小车</h3>
+                                <p>演示在资源受限的 MCU 上运行 micro-ROS 节点，完成传感、控制和云端协同。</p>
+                                <div class="video-card__meta">
+                                    <span class="video-card__duration">01:33</span>
+                                    <button class="video-card__cta" type="button">播放视频</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="video-card" data-src="assets/ros/ros2_movit_arm_sim.mp4" data-poster="assets/video-poster.jpg">
+                            <div class="video-card__thumb" style="background-image: url('assets/video-poster.jpg');">
+                                <div class="video-card__player" hidden></div>
+                                <span class="video-card__badge">MoveIt2 机械臂</span>
+                                <button class="video-card__play" type="button" aria-label="播放 MoveIt2 机械臂仿真演示">
+                                    <span aria-hidden="true">▶</span>
+                                </button>
+                            </div>
+                            <div class="video-card__body">
+                                <h3>MoveIt2 机械臂仿真</h3>
+                                <p>在 Gazebo/MoveIt2 环境模拟六轴机械臂，展示规划、避障与任务编排流程。</p>
+                                <div class="video-card__meta">
+                                    <span class="video-card__duration">02:26</span>
+                                    <button class="video-card__cta" type="button">播放视频</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>联系我</h2>
+            <p>如果你看完视频对我感兴趣，欢迎联系我进一步交流。</p>
+            <div class="contact__info">
+                <a href="mailto:laihaoqun1017@163.com" class="contact__item">
+                    <span class="contact__label">邮箱</span>
+                    <span class="contact__value">laihaoqun1017@163.com</span>
+                </a>
+                <a href="tel:+8613682844764" class="contact__item">
+                    <span class="contact__label">电话</span>
+                    <span class="contact__value">+86 136 8284 4764</span>
+                </a>
+                <a href="https://github.com/Rickeylaiii" target="_blank" rel="noopener" class="contact__item">
+                    <span class="contact__label">GitHub</span>
+                    <span class="contact__value">github.com/Rickeylaiii</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="year"></span> Rickeylaiii · 版权所有</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
