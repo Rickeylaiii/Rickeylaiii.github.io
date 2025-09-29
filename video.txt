@@ -1,0 +1,14 @@
+AIRSHIP_SPACE.mp4 : <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115288582463369&bvid=BV1UUnBzdENn&cid=32728354191&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+AIRSHIP_INDOOR.mp4 : <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115288582397067&bvid=BV1tUnBzdEpM&cid=32728353984&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+balance_motor.mp4 : <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115288582397575&bvid=BV1tUnBzdEag&cid=32728354305&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+Gondola_Directional_Stability.mp4 : <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115288582395777&bvid=BV1bUnBzdEGQ&cid=32728354236&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+car.mp4 : <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115288599173121&bvid=BV1JKnzz5EUZ&cid=32728419722&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+HRNET_pose_detect.mp4 : <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115288599171139&bvid=BV1nKnzz5EsM&cid=32728419747&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+living_face_recognition.mp4 : <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115288599174700&bvid=BV1JKnzz5E6B&cid=32728419779&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+chat_robot.mp4 : <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115288599174132&bvid=BV1nKnzz5EFL&cid=32728483796&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+openglasslaiii.mp4 : <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115288599304138&bvid=BV1cKnzzLELL&cid=32728483769&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+ESP32S3_mircoROS_car.mp4 : <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115288615951223&bvid=BV1nPnzz1E1P&cid=32728547890&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+ros2_movit_arm_sim.mp4 : <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115288615952023&bvid=BV1nPnzz1Enn&cid=32728548016&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
