@@ -20,4 +20,20 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    // 点击特效
+    document.addEventListener('click', (e) => {
+        const ripple = document.createElement('div');
+        ripple.className = 'click-ripple';
+        
+        // 设置位置
+        ripple.style.left = `${e.pageX}px`;
+        ripple.style.top = `${e.pageY}px`;
+        
+        document.body.appendChild(ripple);
+        
+        // 动画结束后移除元素
+        ripple.addEventListener('animationend', () => {
+            ripple.remove();
+        });
+    });
 });
