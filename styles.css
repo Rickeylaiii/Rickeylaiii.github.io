@@ -28,18 +28,18 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* 自定义默认指针：深色圆点 */
-    cursor: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='4' fill='%231d1d1f' stroke='white' stroke-width='1'/%3E%3C/svg%3E") 12 12, auto;
+    /* 自定义默认指针：红色激光倒V - 膨胀倾斜版 */
+    cursor: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg transform='rotate(-30 16 16)'%3E%3Cpath d='M7 26L16 4L25 26' stroke='%23FF0044' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M7 26L16 4L25 26' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E") 10 6, auto;
 }
 
-/* 自定义交互指针：蓝色圆点带光圈 */
+/* 自定义交互指针：青色激光倒V带准心 - 膨胀倾斜版 */
 a, button, 
 .hero__cta, 
 .video-card__play, 
 .video-card__cta, 
 .contact__item, 
 .certificate-download {
-    cursor: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='12' cy='12' r='4' fill='%230071e3' stroke='white' stroke-width='1'/%3E%3Ccircle cx='12' cy='12' r='9' stroke='%230071e3' stroke-width='1.5' opacity='0.5'/%3E%3C/svg%3E") 12 12, pointer;
+    cursor: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg transform='rotate(-30 16 16)'%3E%3Cpath d='M7 26L16 4L25 26' stroke='%2300FFFF' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M7 26L16 4L25 26' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='16' cy='18' r='3' fill='%2300FFFF'/%3E%3C/g%3E%3C/svg%3E") 10 6, pointer;
 }
 
 a {
