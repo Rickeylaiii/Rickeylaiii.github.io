@@ -41,11 +41,13 @@ body {
 
 @media (min-width: 992px) {
     body {
-        cursor: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='6' cy='6' r='4' fill='white' fill-opacity='0.8'/%3E%3C/svg%3E") 6 6, auto;
+        /* Default Cursor: Cyan Hollow "V" */
+        cursor: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0L11 30L15 15L30 11L0 0Z' fill='%2300FFFF' fill-opacity='0.2' stroke='%2300FFFF' stroke-width='2' stroke-linejoin='round'/%3E%3Cpath d='M0 0L7 19L10 10L19 7L0 0Z' fill='%2300FFFF'/%3E%3C/svg%3E") 0 0, auto;
     }
     
-    a, button, .video-card__thumb {
-        cursor: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='16' cy='16' r='8' stroke='%233b82f6' stroke-width='2' fill='none'/%3E%3Ccircle cx='16' cy='16' r='2' fill='white'/%3E%3C/svg%3E") 16 16, pointer;
+    /* Hover Cursor: Red Target "V" */
+    a, button, .video-card, .hero__cta, .contact__card, .certificate-download {
+        cursor: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0L11 30L15 15L30 11L0 0Z' fill='%23FF0044' fill-opacity='0.2' stroke='%23FF0044' stroke-width='2' stroke-linejoin='round'/%3E%3Cpath d='M0 0L7 19L10 10L19 7L0 0Z' fill='%23FF0044'/%3E%3C/svg%3E") 0 0, pointer;
     }
 }
 
@@ -472,4 +474,14 @@ body {
 @media (max-width: 768px) {
     .navbar__menu { display: none; } /* Simple hide for mobile, or add hamburger logic */
     .hero__title { font-size: 2.5rem; }
+}
+
+#click-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
 }
